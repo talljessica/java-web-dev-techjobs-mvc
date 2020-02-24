@@ -27,14 +27,14 @@
         </div>
     </div>
     <table th:fragment="job-listing" class="job-listing">
-        <tr th:each="jobs : ${jobs}">
+        <tr th:each="job : ${jobs}">
             <td>
-                <p>ID:<span th:text="${jobs.getId()}"></span></p>
-                <p>Name:<span th:text="${jobs.getName()}"></span></p>
-                <p>Employer:<span th:text="${jobs.getEmployer()}"></span></p>
-                <p>Location:<span th:text="${jobs.getLocation()}"></span></p>
-                <p>Position Type:<span th:text="${jobs.getPositionType()}"></span></p>
-                <p>Skill:<span th:text="${jobs.getCoreCompetency()}"></span></p>
+                <p>ID:<span th:text="${job.getId()}"></span></p>
+                <p>Name:<span th:text="${job.getName()}"></span></p>
+                <p>Employer:<span th:text="${job.getEmployer()}"></span></p>
+                <p>Location:<span th:text="${job.getLocation()}"></span></p>
+                <p>Position Type:<span th:text="${job.getPositionType()}"></span></p>
+                <p>Skill:<span th:text="${job.getCoreCompetency()}"></span></p>
             </td>
         </tr>
     </table>
